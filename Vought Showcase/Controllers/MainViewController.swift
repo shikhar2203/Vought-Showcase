@@ -18,13 +18,14 @@ class MainViewController: UIViewController {
     
     private func initCarouselView() {
         // Create a carousel item provider
-        let carouselItemProvider = CarouselItemDataSourceProvider()
+//        let carouselItemProvider = CarouselItemDataSourceProvider()
         
         // Create carouselViewController
-        let carouselViewController = CarouselViewController(items: carouselItemProvider.items())
+//        let carouselViewController = CarouselViewController(items: carouselItemProvider.items())
         
         // Add carousel view controller in container view
-        add(asChildViewController: carouselViewController, containerView: containerView)
+//        add(asChildViewController: carouselViewController, containerView: containerView)
+        add(asChildViewController: SegmentedBarController(), containerView: containerView)
     }
     
 }
